@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar 2 - Slide-in Underline from Left</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header with navigation -->
+    <header>
+        <nav class="navbar">
+            <!-- Logo/Brand section -->
+            <div class="navbar-brand">
+                <a href="#" class="brand-link">SlideNav</a>
+            </div>
+            
+            <!-- Navigation links -->
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#products" class="nav-link">Products</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#solutions" class="nav-link">Solutions</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#blog" class="nav-link">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#support" class="nav-link">Support</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main content area -->
+    <main class="main-content">
+        <div class="content-container">
+            <h1>Slide-in Underline Animation</h1>
+            <p>This navbar features an underline that slides in from the left when you hover over navigation links. The animation creates a smooth, directional effect that guides the user's eye.</p>
+            
+            <div class="features">
+                <h2>Key Features:</h2>
+                <ul>
+                    <li>Directional slide-in animation</li>
+                    <li>Transform-based CSS animation</li>
+                    <li>Professional hover effect</li>
+                    <li>Responsive design</li>
+                </ul>
+            </div>
+
+            <div class="animation-explanation">
+                <h2>How the Animation Works:</h2>
+                <p>The underline starts at the left edge with a width of 0 and transforms its scale from 0 to 1 along the X-axis. This creates the illusion of the line sliding in from the left side.</p>
+                <code>
+                    transform: scaleX(0);<br>
+                    transform-origin: left;<br>
+                    transition: transform 0.3s ease;
+                </code>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
