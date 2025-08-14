@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar 4 - Dropdown Menu Animation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header with navigation -->
+    <header>
+        <nav class="navbar">
+            <!-- Logo/Brand section -->
+            <div class="navbar-brand">
+                <a href="#" class="brand-link">DropNav</a>
+            </div>
+            
+            <!-- Navigation links -->
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="#services" class="nav-link dropdown-toggle">Services</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#web-design" class="dropdown-link">Web Design</a></li>
+                        <li><a href="#development" class="dropdown-link">Development</a></li>
+                        <li><a href="#seo" class="dropdown-link">SEO Services</a></li>
+                        <li><a href="#consulting" class="dropdown-link">Consulting</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="#products" class="nav-link dropdown-toggle">Products</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#software" class="dropdown-link">Software</a></li>
+                        <li><a href="#tools" class="dropdown-link">Tools</a></li>
+                        <li><a href="#templates" class="dropdown-link">Templates</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main content area -->
+    <main class="main-content">
+        <div class="content-container">
+            <h1>Dropdown Menu Animation</h1>
+            <p>This navbar features smooth dropdown menu animations. Hover over "Services" or "Products" to see the dropdown menus slide down with a smooth animation effect.</p>
+            
+            <div class="features">
+                <h2>Key Features:</h2>
+                <ul>
+                    <li>Smooth slide-down animation</li>
+                    <li>Opacity and transform transitions</li>
+                    <li>Hover state management</li>
+                    <li>Keyboard accessible dropdown</li>
+                    <li>Click-outside-to-close functionality</li>
+                </ul>
+            </div>
+
+            <div class="animation-explanation">
+                <h2>How Dropdown Animation Works:</h2>
+                <p>The dropdown menu uses a combination of CSS transforms and opacity changes to create a smooth slide-down effect:</p>
+                
+                <div class="code-example">
+                    <h3>Initial State (Hidden):</h3>
+                    <code>
+                        opacity: 0;<br>
+                        transform: translateY(-10px);<br>
+                        visibility: hidden;
+                    </code>
+                </div>
+                
+                <div class="code-example">
+                    <h3>Hover State (Visible):</h3>
+                    <code>
+                        opacity: 1;<br>
+                        transform: translateY(0);<br>
+                        visibility: visible;
+                    </code>
+                </div>
+            </div>
+
+            <div class="tips-section">
+                <h2>UX Design Tips:</h2>
+                <ul>
+                    <li><strong>Timing:</strong> Use 200-300ms for dropdown animations</li>
+                    <li><strong>Direction:</strong> Slide down feels natural for dropdowns</li>
+                    <li><strong>Hover Delay:</strong> Add small delay before hiding to prevent accidental closure</li>
+                    <li><strong>Accessibility:</strong> Ensure keyboard navigation works properly</li>
+                </ul>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

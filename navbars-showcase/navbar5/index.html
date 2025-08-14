@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar 5 - Hamburger Menu</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header with navigation -->
+    <header>
+        <nav class="navbar">
+            <!-- Logo/Brand section -->
+            <div class="navbar-brand">
+                <a href="#" class="brand-link">BurgerNav</a>
+            </div>
+            
+            <!-- Hamburger menu button -->
+            <button class="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+            
+            <!-- Navigation links (mobile menu) -->
+            <div class="navbar-menu">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="#home" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#portfolio" class="nav-link">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#services" class="nav-link">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#team" class="nav-link">Team</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#blog" class="nav-link">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contact" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Overlay for mobile menu -->
+    <div class="menu-overlay"></div>
+
+    <!-- Main content area -->
+    <main class="main-content">
+        <div class="content-container">
+            <h1>Hamburger Menu Navigation</h1>
+            <p>This navbar features a responsive hamburger menu that's perfect for mobile devices. The menu slides in from the side with smooth animations and includes an overlay background.</p>
+            
+            <div class="features">
+                <h2>Key Features:</h2>
+                <ul>
+                    <li>Responsive hamburger icon animation</li>
+                    <li>Slide-in mobile menu</li>
+                    <li>Semi-transparent overlay</li>
+                    <li>Touch-friendly mobile interface</li>
+                    <li>Smooth CSS transitions</li>
+                    <li>Keyboard accessible</li>
+                </ul>
+            </div>
+
+            <div class="hamburger-explanation">
+                <h2>Hamburger Icon Animation:</h2>
+                <p>The hamburger icon transforms into an "X" when clicked, providing clear visual feedback:</p>
+                
+                <div class="animation-states">
+                    <div class="state-example">
+                        <h3>Default State:</h3>
+                        <p>Three horizontal lines stacked vertically</p>
+                        <div class="demo-hamburger">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+                    
+                    <div class="state-example">
+                        <h3>Active State:</h3>
+                        <p>Lines rotate to form an "X" shape</p>
+                        <div class="demo-hamburger active">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mobile-ux-tips">
+                <h2>Mobile UX Best Practices:</h2>
+                <ul>
+                    <li><strong>Touch Target Size:</strong> Minimum 44px for easy tapping</li>
+                    <li><strong>Visual Feedback:</strong> Clear hover and active states</li>
+                    <li><strong>Menu Position:</strong> Consider left or right slide based on thumb reach</li>
+                    <li><strong>Overlay:</strong> Semi-transparent to maintain context</li>
+                    <li><strong>Close Options:</strong> Multiple ways to close (tap outside, close button)</li>
+                </ul>
+            </div>
+
+            <div class="responsive-note">
+                <h2>📱 Test on Mobile:</h2>
+                <p>To see the hamburger menu in action, resize your browser window to mobile width (below 768px) or view this page on a mobile device.</p>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

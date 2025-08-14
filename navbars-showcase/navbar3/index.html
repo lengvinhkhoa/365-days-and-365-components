@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar 3 - Background Color Change</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header with navigation -->
+    <header>
+        <nav class="navbar">
+            <!-- Logo/Brand section -->
+            <div class="navbar-brand">
+                <a href="#" class="brand-link">ColorNav</a>
+            </div>
+            
+            <!-- Navigation links -->
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#features" class="nav-link">Features</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#pricing" class="nav-link">Pricing</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#testimonials" class="nav-link">Testimonials</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main content area -->
+    <main class="main-content">
+        <div class="content-container">
+            <h1>Background Color Change Navigation</h1>
+            <p>This navbar demonstrates smooth background color transitions on hover. Each navigation link changes its background color when you hover over it, creating a modern and interactive feel.</p>
+            
+            <div class="features">
+                <h2>Key Features:</h2>
+                <ul>
+                    <li>Smooth background color transitions</li>
+                    <li>Rounded corners for modern design</li>
+                    <li>High contrast for accessibility</li>
+                    <li>Clean typography and spacing</li>
+                </ul>
+            </div>
+
+            <div class="color-explanation">
+                <h2>Color Design Principles:</h2>
+                <p>The color scheme uses complementary colors to create visual hierarchy and ensure good readability. The hover states provide clear feedback to users about interactive elements.</p>
+                
+                <div class="color-palette">
+                    <div class="color-sample primary">
+                        <span>Primary: #3498db</span>
+                    </div>
+                    <div class="color-sample secondary">
+                        <span>Secondary: #2c3e50</span>
+                    </div>
+                    <div class="color-sample accent">
+                        <span>Accent: #e67e22</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="css-explanation">
+                <h2>CSS Transition Properties:</h2>
+                <code>
+                    background-color: transparent;<br>
+                    transition: background-color 0.3s ease, color 0.3s ease;<br>
+                    border-radius: 6px;
+                </code>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

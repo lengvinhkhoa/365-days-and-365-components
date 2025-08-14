@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar 6 - Active Link Indicator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header with navigation -->
+    <header>
+        <nav class="navbar">
+            <!-- Logo/Brand section -->
+            <div class="navbar-brand">
+                <a href="#" class="brand-link">ActiveNav</a>
+            </div>
+            
+            <!-- Navigation links with active indicator -->
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link active">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#services" class="nav-link">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#portfolio" class="nav-link">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#testimonials" class="nav-link">Testimonials</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            
+            <!-- Active indicator that moves between links -->
+            <div class="active-indicator"></div>
+        </nav>
+    </header>
+
+    <!-- Page sections for demonstrating scroll-based active states -->
+    <main>
+        <section id="home" class="content-section">
+            <div class="section-content">
+                <h1>Active Link Indicator Navigation</h1>
+                <p>This navbar features a dynamic active link indicator that smoothly moves between navigation items. The indicator shows which section you're currently viewing and animates when you click different links.</p>
+                
+                <div class="features">
+                    <h2>Key Features:</h2>
+                    <ul>
+                        <li>Dynamic position-based indicator</li>
+                        <li>Smooth transition animations</li>
+                        <li>Scroll-based section highlighting</li>
+                        <li>Real-time position calculation</li>
+                        <li>Responsive design adaptation</li>
+                    </ul>
+                </div>
+
+                <div class="scroll-instruction">
+                    <h2>📍 Try It Out:</h2>
+                    <p>Scroll down to see the active indicator automatically move as you enter different sections, or click the navigation links to jump between sections.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="content-section">
+            <div class="section-content">
+                <h1>About Section</h1>
+                <p>This section demonstrates how the active indicator updates based on the current section in view. The JavaScript calculates which section is most visible and updates the navigation accordingly.</p>
+                
+                <div class="technical-explanation">
+                    <h2>Technical Implementation:</h2>
+                    <p>The active indicator uses JavaScript to:</p>
+                    <ul>
+                        <li>Calculate the position and width of the active link</li>
+                        <li>Animate the indicator using CSS transforms</li>
+                        <li>Monitor scroll position to update active states</li>
+                        <li>Handle window resize events for responsiveness</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="services" class="content-section">
+            <div class="section-content">
+                <h1>Services Section</h1>
+                <p>Notice how the active indicator smoothly transitions to this section's navigation link. The animation provides clear visual feedback about your current location in the site.</p>
+                
+                <div class="animation-details">
+                    <h2>Animation Properties:</h2>
+                    <code>
+                        transform: translateX(position) scaleX(width);<br>
+                        transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+                    </code>
+                    <p>The cubic-bezier timing function creates a smooth, professional feel to the animation.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="portfolio" class="content-section">
+            <div class="section-content">
+                <h1>Portfolio Section</h1>
+                <p>The active indicator adapts to different link widths automatically. Each navigation item can have different text lengths, and the indicator will scale accordingly.</p>
+                
+                <div class="responsive-notes">
+                    <h2>Responsive Behavior:</h2>
+                    <ul>
+                        <li>Indicator recalculates position on window resize</li>
+                        <li>Adapts to mobile navigation layouts</li>
+                        <li>Maintains smooth animation across breakpoints</li>
+                        <li>Gracefully handles navigation structure changes</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="testimonials" class="content-section">
+            <div class="section-content">
+                <h1>Testimonials Section</h1>
+                <p>The scroll detection works by calculating the intersection of each section with the viewport. The section with the largest visible area becomes the active one.</p>
+                
+                <div class="intersection-explanation">
+                    <h2>Intersection Observer vs Scroll Events:</h2>
+                    <p>This implementation uses scroll events for educational purposes, but modern browsers support the Intersection Observer API for better performance:</p>
+                    <ul>
+                        <li><strong>Scroll Events:</strong> More browser support, simpler logic</li>
+                        <li><strong>Intersection Observer:</strong> Better performance, more complex setup</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="content-section">
+            <div class="section-content">
+                <h1>Contact Section</h1>
+                <p>You've reached the final section! The active indicator should now be positioned over the "Contact" link in the navigation.</p>
+                
+                <div class="implementation-tips">
+                    <h2>Implementation Tips:</h2>
+                    <ul>
+                        <li>Use requestAnimationFrame for smooth animations</li>
+                        <li>Throttle scroll events to improve performance</li>
+                        <li>Add fallbacks for browsers without transform support</li>
+                        <li>Test thoroughly on different screen sizes</li>
+                        <li>Consider accessibility implications of dynamic indicators</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
